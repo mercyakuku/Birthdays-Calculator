@@ -1,22 +1,41 @@
-#body{
-    /*margin: 0%;*/
-    /*padding: 0%;*/
-   /* font-family: Arial, Helvetica, sans-serif;*/
+*{
+    margin: 0%;
+    padding: 0%;
 }
 
-.container{
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 100%;
-    height: 100vh;
-    animation: animate 16s ease-in-out;
+.load{
+    animation: slide 2s;
 
 }
+
+.slider{
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 100vh;
+animation: slide 40s infinite;
+}
+
+.content{
+color: antiquewhite;
+width: 100%;
+height: 100%;
+background-color: gray;
+}
+
+.principal{
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+}
+
+
 
 #footer .section-a{
     background-color: #000;
     padding: 1%;
+    position: fixed;
  }
  
  .section-a i{
