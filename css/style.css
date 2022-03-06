@@ -28,6 +28,27 @@ background-color: gray;
 left: 50%;
 top: 50%;
 transform: translate(-50%,-50%);
+position: absolute;
+letter-spacing: 5px;
+text-align: center;
+}
+
+@keyframes{
+    0%{
+        background-image: url(/home/grace/Documents/moringa-school-projects/Birthdays-Calculator/images/pikwizard-16ebb8040705ed44dc5b05f81b3a4985.jpg);
+    }
+    20%{
+        background-image: url(/home/grace/Documents/moringa-school-projects/Birthdays-Calculator/images/pikwizard-2568b63f40eff704ff8f72f97deb6b55.jpg);
+    }
+    20.01%{
+        background-image: url(/home/grace/Documents/moringa-school-projects/Birthdays-Calculator/images/pikwizard-82cec834a66c410b717f197741821665.jpg);
+    }
+    40%{
+        background-image: url(/home/grace/Documents/moringa-school-projects/Birthdays-Calculator/images/pikwizard-c24a51d0ef25ae5f00145f60715d962c.jpg);
+    }
+    40.01%{
+        background-image: url(/home/grace/Documents/moringa-school-projects/Birthdays-Calculator/images/pikwizard-f892eaceac172b47e95f43dafb47734a.jpg); 
+    }
 }
 
 
@@ -35,7 +56,6 @@ transform: translate(-50%,-50%);
 #footer .section-a{
     background-color: #000;
     padding: 1%;
-    position: fixed;
  }
  
  .section-a i{
