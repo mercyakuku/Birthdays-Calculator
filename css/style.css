@@ -25,6 +25,26 @@ animation: cycleImages 35s infinite;
 
 }
 
+.slideshow-item:nth-child(1){
+    animation-delay: 0s;
+}
+
+.slideshow-item:nth-child(2){
+    animation-delay: 10s;
+}
+
+.slideshow-item:nth-child(3){
+    animation-delay: 15s;
+}
+
+.slideshow-item:nth-child(4){
+    animation-delay: 20s;
+}
+
+.slideshow-item:nth-child(5){
+    animation-delay: 25s;
+}
+
 .slideshow-item img{
     width: 100%;
     height: 100vh;
@@ -47,25 +67,20 @@ font-weight: 400s;
     font-weight: 700;
 }
 
-@keyframes{
-    0%{
-        background-image: url(/home/grace/Documents/moringa-school-projects/Birthdays-Calculator/images/pikwizard-16ebb8040705ed44dc5b05f81b3a4985.jpg);
-    }
-    20%{
-        background-image: url(/home/grace/Documents/moringa-school-projects/Birthdays-Calculator/images/pikwizard-2568b63f40eff704ff8f72f97deb6b55.jpg);
-    }
-    20.01%{
-        background-image: url(/home/grace/Documents/moringa-school-projects/Birthdays-Calculator/images/pikwizard-82cec834a66c410b717f197741821665.jpg);
+@keyframes cycleImages{
+    25%{
+        opacity: 1;
     }
     40%{
-        background-image: url(/home/grace/Documents/moringa-school-projects/Birthdays-Calculator/images/pikwizard-c24a51d0ef25ae5f00145f60715d962c.jpg);
-    }
-    40.01%{
-        background-image: url(/home/grace/Documents/moringa-school-projects/Birthdays-Calculator/images/pikwizard-f892eaceac172b47e95f43dafb47734a.jpg); 
+        opacity: 0; 
     }
 }
 
-
+@keyframes zoom{
+    100%{
+        transform: scale(1.3);
+    }
+}
 
 #footer .section-a{
     background-color: #000;
