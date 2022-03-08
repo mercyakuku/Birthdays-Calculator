@@ -35,7 +35,7 @@ If you find a bug, kindly open an issue here by including your search query and 
 
 If you'd like to request a new function, feel free to do so by opening an issue here. Please include sample queries and their corresponding results.
 
-Link to Live Site : 
+Link to Live Site : https://mercyakuku.github.io/Birthdays-Calculator/
 
 # License.
 MIT License
