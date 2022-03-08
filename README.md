@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-#My project's name is: 
-Birthdays-Calculator.
-=======
+My project's name is:
 # Birthdays-Calculator.
->>>>>>> 4cc1edd265ea89fb33abdaa343907ac6bc66d6a2
 
 #This project is all about a website of my Ghanian Akan Names. It's current version is of 8 March 2022.
 # By mercyakuku.
@@ -64,8 +60,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-<<<<<<< HEAD
 Copyright (c) 2022 **{mercyakuku}*
-=======
-Copyright (c) 2022 **{mercyakuku}*
->>>>>>> 4cc1edd265ea89fb33abdaa343907ac6bc66d6a2
