@@ -63,7 +63,7 @@
 
         </div>
         <div class="slideshow-item">
-            <img src="./images/image2.jpg" alt="birthday">            
+            <img src="./images/image2.jpg" alt="image">            
             <div class="slideshow-item-text">
                 <h5>Akan Names</h5>
                 <p>
@@ -74,8 +74,7 @@
 
         </div>
         <div class="slideshow-item">
-            <img src="/home/grace/Documents/moringa-school-projects/Birthdays-Calculator/images/pikwizard-011ccd0a2a9503baf98f0597b9962fdc.jpg"
-                alt="">
+            <img src="./images/image3.jpg" alt="image">
             <div class="slideshow-item-text">
                 <h5>Akan Names</h5>
                 <p>
@@ -86,8 +85,7 @@
 
         </div>
         <div class="slideshow-item">
-            <img src="/home/grace/Documents/moringa-school-projects/Birthdays-Calculator/images/pikwizard-c24a51d0ef25ae5f00145f60715d962c.jpg"
-                alt="">
+            <img src="./images/image4.jpg" alt="image">
             <div class="slideshow-item-text">
                 <h5>Akan Names</h5>
                 <p>
@@ -98,8 +96,7 @@
 
         </div>
         <div class="slideshow-item">
-            <img src="/home/grace/Documents/moringa-school-projects/Birthdays-Calculator/images/pikwizard-2568b63f40eff704ff8f72f97deb6b55.jpg"
-                alt="">
+            <img src="./images/image5.jpg" alt="image">
             <div class="slideshow-item-text">
                 <h5>Akan Names</h5>
                 <p>
@@ -158,18 +155,26 @@
 
         </div>
     </div>
-    <form>
+    <form onsubmit="formSubmit(event)" id="form">
         <h1>Sign Up</h1>
-        <label for="DOB">Year of birth:</label><br>
-        <input type="date" id="DOB" name="year"><br>
-        <label for="Gender">Gender:</label><br>
-        <input type="radio" id="Gender" name="Gender">Male
-        <input type="radio" id="Gender" name="Gender">Female<br>
-        <button type="submit">Submit</button>
-
-    </form>
-
-
+        <div class="mb-3">
+          <label for="exampleInputDOB" class="form-label">Year of birth</label>
+          <input type="date" class="form-control" id="exampleInputDOB" aria-describedby="DOBHelp">
+          <div id="DOBHelp" class="form-text">I'll never share your Year of Birth with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Gender</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+              </select>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary" value="submit" onclick="formSubmit()">Submit</button>
+      </form>
 
     <!--Footer section-->
     <div class="row" id="footer">
