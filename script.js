@@ -1,4 +1,4 @@
-</*for(var i=0;i<myGender.length;i++){
+for(var i=0;i<myGender.length;i++){
     if(myGender[i].checked){
         if(myGender[i].value === "Male"){
             document.getElementById('message').innerHTML = "Born on a <span>" + days[dayOfTheWeek] + "</span>, Your Akan Name's <span>" + maleAkanNames[dayOfTheWeek] + "</span>";
@@ -10,7 +10,7 @@
             document.getElementById('message').innerHTML = "Born on a <span>" + days[dayOfTheWeek] + "</span>, Your Akan Name's <span>" + femaleAkanNames[dayOfTheWeek] + "</span>";
             document.getElementById('message').innerHTML = "<span><i class=\"fa fa-female\"></i></span>&nbsp;&nbsp; Born on a <span>" + days[dayOfTheWeek] + "</span>, Your Akan Name's <span>" + femaleAkanNames[dayOfTheWeek] + "</span>";
             $('#message span:first-child').addClass("animated fadeInDown");
-            $('#message span:last-child').addClass("animated fadeInUp");*/
+            $('#message span:last-child').addClass("animated fadeInUp");
 let date = document.getElementById("date")
 let month = document.getElementById("month")
 let year = document.getElementById("year")
@@ -27,10 +27,9 @@ function calculate(){
     let DD = date.value;
 (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7
 
-<script type="text/javascript">
 // Set/Change the Year in the dropdown
 // Eg: var month=new array("January","February",..);
-var month = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
+let month = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
 var startyear = "1950"; // Change the Starting year in your dropdown
 var endyear = "2013";
 // Change the ending year in the dropdown
@@ -43,7 +42,46 @@ var dayborn = birthday.getDay();
 var weekday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
 alert("You were born on a " + weekday[dayborn]);
 }
-</script>
+
+function formSubmit(event){
+    event.preventDefault();
+}
+
+let yearofBirth = document.getElementById("DOB").value;
+console.log(yearofBirth);
+
+ femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"
+     document.myForm.year.focus() 
+]
+
+
+  //creating arrays of Akan names for males & females and days of the week
+  let daysOfWeek = [
+    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+  ]
+
+  let maleAkanNames = [
+    "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"
+  ]
+
+  let femaleAkanNames = [
+    "Akosua", "Adwoa","Abenaa","Akua", "Yaa", "Afua", "Ama"
+  ]
+
+  if (myGenderValue == "male" && monthValid && dayValid) {
+    document.getElementById('result').textContent = "You were born on a " + daysOfWeek[index] + " , your Akan name is " + maleAkanNames[index];
+    document.getElementById('display-name').textContent = "Here is your Akan name: ";
+    document.getElementById('result').style.fontSize = "18px";
+    document.querySelector('h1').textContent = "Hello" + " " + maleAkanNames[index];
+    return false;
+  } else if (myGenderValue == "female" && monthValid && dayValid) {
+    document.getElementById('result').textContent = "You were born on a " + daysOfWeek[index] + " , your Akan name is " + femaleAkanNames[index];
+    document.getElementById('display-name').textContent = "Here is your Akan name: ";
+    document.getElementById('result').style.fontSize = "18px";
+    document.querySelector('h1').textContent = "Hello" + " " + femaleAkanNames[index];
+    return false;
+  } else {
+    alert("You entered an invalid day or month, please try again");
 
 
 //CC - is the century digits. For example 1989 has CC = 19//
@@ -55,8 +93,4 @@ alert("You were born on a " + weekday[dayborn]);
 //DD - is the Day of the month 
 
 //mod - is the modulus function ( % )//
-}
-
-let str = "1989"
-let str1 = str.slice(0,2)
-console.log(str1)
+}}

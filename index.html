@@ -42,13 +42,6 @@
 
 
     <!--<script src="js/scripts.js">-->
-    <div class="container">
-
-        <form action="signup.html" method="post" id="signup">
-
-      </form>
-      </div>
-  </script>
     
     <div class="slideshow">
         <div class="slideshow-item">
@@ -155,26 +148,35 @@
 
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
     <form onsubmit="formSubmit(event)" id="form">
         <h1>Sign Up</h1>
         <div class="mb-3">
           <label for="exampleInputDOB" class="form-label">Year of birth</label>
-          <input type="date" class="form-control" id="exampleInputDOB" aria-describedby="DOBHelp">
+          <input type="date" class="form-control" id="exampleInputDOB" aria-describedby="DOBHelp" required>
           <div id="DOBHelp" class="form-text">I'll never share your Year of Birth with anyone else.</div>
         </div>
         <div class="mb-3">
-            <select class="form-select" aria-label="Default select example">
+            <select class="form-select" aria-label="Default select example" required>
                 <option selected>Gender</option>
                 <option value="1">Male</option>
                 <option value="2">Female</option>
               </select>
         </div>
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
-        <button type="submit" class="btn btn-primary" value="submit" onclick="formSubmit()">Submit</button>
-      </form>
+        <button type="submit" class="btn btn-primary" value="submit" onclick="formSubmit(event)">Submit</button>
+       </form>
+      </div>
+      <div class="col-md-6" id="output">
+
+      </div>
+     </div>
+    </div>
 
     <!--Footer section-->
     <div class="row" id="footer">
